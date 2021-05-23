@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div id="text">#000000</div>
+        <button onclick="generateColor()" class="generateBtn">Generate Colour</button>
+    </div>
+    <script>
+        function generateColor(){
+            var randomColor = (Math.floor(Math.random()*16777216)).toString(16)
+            //console.log(randomColor)
+            document.body.style.backgroundColor = "#" + randomColor
+            var text = document.getElementById('text')
+            text.innerText = '#' + randomColor
+        }
+
+    </script>
+</body>
+</html>

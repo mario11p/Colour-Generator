@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background: #000;
+}
+
+.main{
+    width: 350px;
+    height: 250px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+#text{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.generateBtn{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: #1687a7;
+    color: white;
+}
